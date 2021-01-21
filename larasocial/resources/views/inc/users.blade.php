@@ -5,6 +5,7 @@ use App\User;
 
     <div class="container">
         <div class="row">
+            @if (Auth::user() != null)
             @foreach (User::all() as $user)
                 @if ($user->id != Auth::user()->id)
                     <div class="row mt-2">
@@ -14,6 +15,7 @@ use App\User;
                     </div>
                 @endif
             @endforeach
+            @endif
         </div>
     </div>
 
