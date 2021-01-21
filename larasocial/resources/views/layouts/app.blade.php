@@ -85,7 +85,8 @@
                     <div class="col-md-8 col-12">
                         @yield('content')
                     </div>
-
+                
+                @if (Auth::user() != null)
                 <div class="col-md-3 col-12">
                     <h2>Más felhasználók</h2>
                     <div class="col-12 m-auto">
@@ -93,6 +94,7 @@
                         @yield('user_content')
                     </div>
                 </div>
+                @endif
             </div>
         </main>
     </div>
