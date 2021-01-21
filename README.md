@@ -13,6 +13,7 @@ Move repo to htdocs, inside xampp foler.
 Start services of xampp.
 Access phpmyadmin
 Add Database "larasocial"
+Database username and password inside .env file
 Migrate with command: "php artisan migrate" (Table creation)
 Start process from root directory of repo: "php artisan serve"
 
